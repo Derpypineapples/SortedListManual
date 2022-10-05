@@ -1,0 +1,9 @@
+Pushing "Timmy:2" to list
+Pushing "Anthony:1" to list
+Pushing "Greg:0" to list
+Built List: [Greg:0, Anthony:1, Timmy:2]
+List is Sorted
+Built List: [Anthony:1, Greg:0]
+Search Successful, "1" found
+Deleting "2"
+Built List: [Anthony:1, Greg:0]

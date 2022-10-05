@@ -1,0 +1,24 @@
+push
+3
+full
+Timmy Freshman 3.2 2
+part
+Anthony 1
+part
+Greg 0
+
+print
+
+sort
+
+print
+
+search
+1
+
+delete
+2
+
+print
+
+Quit
