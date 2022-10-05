@@ -1,9 +1,8 @@
-Pushing "Timmy:2" to list
 Pushing "Anthony:1" to list
+Pushing "Bob:3" to list
+Pushing "Charles:4" to list
 Pushing "Greg:0" to list
-Built List: [Greg:0, Anthony:1, Timmy:2]
+Pushing "Timmy:2" to list
+Built List: [Timmy:2, Greg:0, Charles:4, Bob:3, Anthony:1]
 List is Sorted
-Built List: [Anthony:1, Greg:0]
-Search Successful, "1" found
-Deleting "2"
-Built List: [Anthony:1, Greg:0]
+Built List: [Charles:4, Bob:3, Timmy:2, Anthony:1, Greg:0]

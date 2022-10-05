@@ -67,6 +67,8 @@ int main(int argc, char const *argv[])
             for (payloadList* ptr = list.GetHead(); ptr != NULL; ptr = ptr->GetNext()) {
                 outFile << ptr->GetContent()->GetName() << ":" << ptr->GetContent()->GetID();
                 if (ptr->hasNext()) outFile << ", ";
+                //cout << "Pointer: " << ptr->GetContent()->GetName() << ":"
+                //     << ((ptr->GetNext() == NULL) ? "NULL" : ptr->GetNext()->GetContent()->GetName()) << endl;
             }
             outFile << "]" << endl;
         }

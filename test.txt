@@ -1,23 +1,19 @@
 push
-3
-full
-Timmy Freshman 3.2 2
+5
 part
 Anthony 1
 part
+Bob 3
+part
+Charles 4
+part
 Greg 0
+full
+Timmy Freshman 3.2 2
 
 print
 
 sort
-
-print
-
-search
-1
-
-delete
-2
 
 print
 
