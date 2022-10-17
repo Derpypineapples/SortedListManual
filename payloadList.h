@@ -28,9 +28,7 @@ class payloadList{
     payloadList* newElement;
     
     payloadList* next;
-    payloadList* prev;
     payloadList* head;
-    payloadList* tail;
 };
 
 #endif
