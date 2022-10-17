@@ -11,9 +11,11 @@ Greg 0
 full
 Timmy Freshman 3.2 2
 
+sort
 print
 
-sort
+delete
+7
 
 print
 

@@ -94,10 +94,15 @@ int main(int argc, char const *argv[])
         inFile >> command;
     }
     
+    //Confirms that all tests run successfully
     cout << "All Tests Completed" << endl;
 
     inFile.close();
     outFile.close();
+
+    //Last line of code, should output if everything is correct
+    //Also checks for files closing correctly (kinda redundant)
+    cout << "Code Exited Successfully" << endl;
 
     return 0;
 }

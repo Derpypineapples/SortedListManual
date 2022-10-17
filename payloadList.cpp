@@ -6,16 +6,10 @@ payloadList::payloadList() {
     next = nullptr;
 }
 payloadList::~payloadList() {
-    ptr = nullptr;
-    newElement = nullptr;
-    next = nullptr;
-    head = nullptr;
-    /*
+    //Delete contents and new element
+    //Don't delete the next or head, could contain other elements in list
     delete ptr;
     delete newElement;
-    delete next;
-    delete head;
-    */
 }
 
 payload* payloadList::GetContent() { return ptr; }
@@ -61,15 +55,17 @@ void payloadList::sort() {
 
     payloadList* prevPtr = head;
     for (payloadList* Pptr = head; Pptr != NULL;) {
-        cout << "\nPointer Loop: " << Pptr->GetContent()->GetName() << endl;
+        //cout << "\nPointer Loop: " << Pptr->GetContent()->GetName() << endl;
 
         //If able to swap, swap and reset loop
         payloadList* nextElem = Pptr->GetNext();
+        /*
         cout << "Swap Test: " << Pptr->GetContent()->GetID() << "<"
              << (Pptr->hasNext() ? nextElem->GetContent()->GetID() : -1) << endl;
+        */
 
         if (Pptr->hasNext() && Pptr->GetContent()->GetID() < nextElem->GetContent()->GetID()){
-            cout << "Elements swapping: " << Pptr->GetContent()->GetName() << ":" << nextElem->GetContent()->GetName() << endl;
+            //cout << "Elements swapping: " << Pptr->GetContent()->GetName() << ":" << nextElem->GetContent()->GetName() << endl;
             
             //Swap two elements
             if (Pptr == head) head = nextElem;
@@ -77,21 +73,24 @@ void payloadList::sort() {
             Pptr->SetNext(nextElem->GetNext());
             nextElem->SetNext(Pptr);
 
+            /*
             cout << "Current: " << Pptr->GetContent()->GetName() << "->"
                  << ((Pptr->GetNext() == NULL) ? "NULL" : Pptr->GetNext()->GetContent()->GetName()) << endl;
             cout << "Next: " << nextElem->GetContent()->GetName() << "->"
                  << ((nextElem->GetNext() == NULL) ? "NULL" : nextElem->GetNext()->GetContent()->GetName()) << endl;
-            //nextElem->SetNext(Pptr);
+            //nextElem->SetNext(Pptr);*/
 
             Pptr = head;
             prevPtr = head;
             
+            /*
             cout << "Head: " << head->GetContent()->GetName() << "\nPointer: " << Pptr->GetContent()->GetName() << endl;
-            //return; /*End Early*/
+            //return;
+            */
         }
         //else, move forward by one
         else{
-            cout << "No Swap" << endl;
+            //cout << "No Swap" << endl;
             if (Pptr != prevPtr) prevPtr = prevPtr->GetNext();
             Pptr = Pptr->GetNext();
         }
